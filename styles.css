@@ -1,0 +1,341 @@
+@import "https://unpkg.com/open-props";
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --clr-dark: #1c1c1c;
+    --clr-light: #d9d9d9;
+    --clr-white: #FFFFFF;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--clr-dark);
+    color: var(--clr-white);
+    font-family: 'Source Sans Pro';
+}
+
+/* HEADER-SECTION */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    position: sticky;
+    top: 0px;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    background: #050505;
+    z-index: 1000;
+    box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
+}
+
+.logo{
+    width: 100px;
+    margin-left: 4em;
+}
+
+/* navbar  */
+.nav > ul {
+    display: flex;
+    list-style: none;
+    width: 460px;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 0.06em;
+    font-weight: 600;
+    font-size: 1.1em;
+    line-height: 125.2%;
+    margin-right: 1.5em;
+}
+
+/* navbar-items-list */
+.nav-items-list > li { 
+    transition: all, 1s;
+    margin: auto;
+}
+
+/* navbar-items */
+.nav-items-list > li > a {
+    text-decoration: none;
+    color: var(--clr-white);
+    position: relative;
+}
+
+.nav-items-list > li > a::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 3px;
+    width: 95%;
+    height: 3px;
+    background: #1FFFE4;
+
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 400ms ease-in;
+}
+
+.nav-items-list > li > a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* INTRO-SECTION */
+
+.intro-section {
+    display: grid;
+    width: min-content;
+    margin: 10rem auto;
+    grid-template-areas: 
+            "img title"
+            "img subtitle";
+    grid-template-columns: min-content max-content;
+}
+
+.myPic-1 {
+    grid-area: img;
+    width: 300px;
+    margin-right: 2em;
+    filter: drop-shadow(12px 12px 4px rgba(0, 0, 0, 0.3));
+    position: relative;
+    z-index: 2;
+}
+
+.MyIntro {
+    font-size: 6.25em;
+    font-family: 'Source Sans Pro';
+    font-weight: 300;
+    letter-spacing: 0.06em;
+    line-height: 1em;
+}
+
+.MyIntro > strong {
+    color: #1FFFE4;
+}
+
+.myProfession {
+    align-self: start;
+    grid-column: -1/1;
+    grid-row: 2;
+    text-align: right;
+    position: relative;
+    left: -1.5em;
+    width: calc(100% + 1.5em);
+    font-family: 'Source Code Pro';
+    font-weight: 700;
+    font-size: 2.5em;
+    background: #1FFFE4;
+    color: var(--clr-dark);
+    padding-right: 0.3em;
+    transition: all 2s;
+}
+
+/* ABOUT-SECTION */
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem 4rem;
+}
+
+/* Who I am? and My Skills headings */
+.about-section-headings {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Who I am? heading */
+.mySelf {
+    font-weight: 300;
+    font-size: 4em;
+    line-height: 100%;
+}
+
+/* I am? and Skills heading */
+.mySelf > strong, .mySkills > strong {
+    font-weight: 700;
+    font-size: 1.2em;
+    color: #1FFFE4;
+}
+
+/* My Skills heading */
+.mySkills {
+    font-weight: 300;
+    font-size: 4em;
+    line-height: 100%;
+    text-align: right;
+}
+
+/* heading underline */
+.about-section hr {
+    border: 3px solid #1FFFE4;
+    border-radius: 2px;
+}
+
+.conatiners {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 2rem 0;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.mySelf-description {
+    display: flex;
+    justify-content: center;
+    line-height: 1.8em;
+}
+
+.mySkills-logo {
+    display: grid;
+    grid-template-columns: fit-content(200px) fit-content(200px);
+    grid-template-rows: auto auto;
+    justify-content: right;
+    grid-column-gap: 100px;
+    grid-row-gap: 10px;
+}
+
+.mySkills-logo i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* WORK-SECTION */
+
+.work-section {
+    margin: 9rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.work-section-title {
+    font-size: 3.5em;
+    font-weight: 300;
+}
+
+.work-section-title strong {
+    font-weight: 700;
+    color: #1FFFE4;
+}
+
+.work-section hr {
+    margin-top: 0.5rem;
+    width: 13%;
+    border: 2px solid #1FFFE4;
+    border-radius: 2px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-200px * 15));
+    }
+}
+
+.media-scoller {
+    box-shadow: inset 12px 12px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    margin-top: 4rem;
+    height: 400px;
+    width: 100%;
+    background: #1FFFE4;
+
+    display: grid;
+    overflow: hidden;
+    overscroll-behavior-inline: contain;
+
+    align-items: center;
+}
+
+.media-track {
+    display: flex;
+    width: calc(200px * 30);
+    justify-content: space-around;
+
+    animation: scroll 40s linear infinite;
+}
+
+.media-track:hover {
+    animation-play-state: paused;
+}
+
+.media-element {
+    width: 200px;
+    height: 275px;
+    background: #1C1C1C;
+    border: 2px solid #FFFFFF;
+    box-shadow: 12px 12px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.snaps-inline {
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: 1rem;
+}
+
+.snaps-inline > * {
+    scroll-snap-align: start;
+}
+
+/* FOOTER-SECTION */
+
+footer {
+    height: auto;
+    background: #050505;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+footer p {
+    color: #1FFFE4;
+    margin: 1.2rem;
+}
+
+.social-links {
+    display: flex;
+    width: 400px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+
+.fa-instagram {
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-discord {
+    color: #5865F2;
+}
+
+.fa-linkedin {
+    color: #0072b1;
+}
+
+.fa-twitter {
+    color: #00acee;
+}
