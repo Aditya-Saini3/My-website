@@ -318,6 +318,10 @@ footer p {
     -webkit-text-fill-color: transparent;
 }
 
+.fa-github {
+    color: white;
+}
+
 .fa-discord {
     color: #5865F2;
 }
