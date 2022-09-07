@@ -14,8 +14,8 @@
     --clr-white: #FFFFFF;
 }
 
-html {
-    scroll-behavior: smooth;
+html, body {
+    scroll-behavior: smooth !important;
 }
 
 body {
@@ -39,7 +39,7 @@ header {
     position: sticky;
     top: 0;
     background: #050505;
-    z-index: 1000;
+    z-index: 3;
     box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -284,15 +284,6 @@ header {
     border: 2px solid #FFFFFF;
     box-shadow: 12px 12px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
-}
-
-.snaps-inline {
-    scroll-snap-type: inline mandatory;
-    scroll-padding-inline: 1rem;
-}
-
-.snaps-inline > * {
-    scroll-snap-align: start;
 }
 
 /* FOOTER-SECTION */
