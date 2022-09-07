@@ -14,8 +14,9 @@
     --clr-white: #FFFFFF;
 }
 
-html, body {
-    scroll-behavior: smooth !important;
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
 }
 
 body {
@@ -148,7 +149,7 @@ header {
 .about-section {
     display: flex;
     flex-direction: column;
-    margin: 4rem 4rem;
+    margin: 0 4rem 9rem;
 }
 
 /* Who I am? and My Skills headings */
@@ -218,7 +219,7 @@ header {
 /* WORK-SECTION */
 
 .work-section {
-    margin: 9rem 4rem;
+    margin: 0rem 4rem 10rem;
     display: flex;
     flex-direction: column;
     align-items: center;
