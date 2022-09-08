@@ -12,11 +12,30 @@
     --clr-dark: #1c1c1c;
     --clr-light: #d9d9d9;
     --clr-white: #FFFFFF;
+
+    --fs-navbar: 2rem;
+    --fs-myName: 10.5rem;
+    --fs-myProfession: 4rem;
+    --fs-subHeading: 6rem;
+    --fs-subHeading_strong: 6.5rem;
+    --fs-mySelfDescription: 2.2rem;
+    --fs-myEmail: 1.8rem;
+
+    --lh-mySelfDescription: 4rem;
+    --h-cardContainer: 400px;
+    --w-card: 200px;
+    --w-description: 40vw;
+    --w-myPic-1: 30rem;
+    --w-myPic-2: 27rem;
+
+    --m-general: 4rem;
+    --p-general: 4rem;
 }
 
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 100px;
+    font-size: 62.5%;
 }
 
 body {
@@ -34,6 +53,7 @@ header {
     height: 50px;
     position: sticky;
     top: 0px;
+    padding: 0rem 4rem 0rem 4rem;
 }
 
 .sticky {
@@ -46,7 +66,6 @@ header {
 
 .logo{
     width: 100px;
-    margin-left: 4em;
 }
 
 /* navbar  */
@@ -54,18 +73,17 @@ header {
     display: flex;
     list-style: none;
     width: 460px;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     letter-spacing: 0.06em;
     font-weight: 600;
-    font-size: 1.1em;
+    font-size: var(--fs-navbar);
     line-height: 125.2%;
-    margin-right: 1.5em;
 }
 
 /* navbar-items-list */
 .nav-items-list > li { 
     transition: all, 1s;
-    margin: auto;
+    margin: 0 0 0 auto;
 }
 
 /* navbar-items */
@@ -99,7 +117,7 @@ header {
 .intro-section {
     display: grid;
     width: min-content;
-    margin: 10rem auto;
+    margin: 16rem auto;
     grid-template-areas: 
             "img title"
             "img subtitle";
@@ -108,7 +126,7 @@ header {
 
 .myPic-1 {
     grid-area: img;
-    width: 300px;
+    width: var(--w-myPic-1);
     margin-right: 2em;
     filter: drop-shadow(12px 12px 4px rgba(0, 0, 0, 0.3));
     position: relative;
@@ -116,7 +134,7 @@ header {
 }
 
 .MyIntro {
-    font-size: 6.25em;
+    font-size: var(--fs-myName);
     font-family: 'Source Sans Pro';
     font-weight: 300;
     letter-spacing: 0.06em;
@@ -125,6 +143,7 @@ header {
 
 .MyIntro > strong {
     color: #1FFFE4;
+    display: block;
 }
 
 .myProfession {
@@ -137,7 +156,7 @@ header {
     width: calc(100% + 1.5em);
     font-family: 'Source Code Pro';
     font-weight: 700;
-    font-size: 2.5em;
+    font-size: var(--fs-myProfession);
     background: #1FFFE4;
     color: var(--clr-dark);
     padding-right: 0.3em;
@@ -147,58 +166,73 @@ header {
 /* ABOUT-SECTION */
 
 .about-section {
+    font-size: var(--fs-mySelfDescription);
     display: flex;
     flex-direction: column;
-    margin: 0 4rem 9rem;
+    margin: 0 4rem 15rem;
 }
 
-/* Who I am? and My Skills headings */
-.about-section-headings {
+/* container wrapping pic and mySelf-description and the other skills container*/
+.mySelfDiv, .mySkillsDiv {
     display: flex;
-    flex-direction: row;
+    align-items: inherit;
     justify-content: space-between;
+    padding: var(--p-general) 0rem;
+}
+
+.mySkillsDiv {
+    flex-direction: row-reverse;
+}
+
+.myPic-2 {
+    max-width: var(--w-myPic-2);
+    height: 100%;
+    filter: drop-shadow(12px 12px 4px rgba(0, 0, 0, 0.3));
+    flex-shrink: 0;
 }
 
 /* Who I am? heading */
 .mySelf {
     font-weight: 300;
-    font-size: 4em;
+    font-size: var(--fs-subHeading);
     line-height: 100%;
+    grid-area: "mySelf";
 }
 
 /* I am? and Skills heading */
 .mySelf > strong, .mySkills > strong {
     font-weight: 700;
-    font-size: 1.2em;
+    font-size: var(--fs-subHeading_strong);
     color: #1FFFE4;
+}
+
+.mySkillsDescription {
+    text-align: right;
 }
 
 /* My Skills heading */
 .mySkills {
     font-weight: 300;
-    font-size: 4em;
+    font-size: var(--fs-subHeading);
     line-height: 100%;
     text-align: right;
+    grid-area: "mySkills";
 }
 
 /* heading underline */
-.about-section hr {
+.mySelfUnderline, .mySkillsUnderline {
     border: 3px solid #1FFFE4;
     border-radius: 2px;
 }
 
-.conatiners {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    margin: 2rem 0;
-    font-weight: 400;
-    font-size: 20px;
+.mySelfUnderline {
+    grid-area: "mySelfUnderline";
 }
 
-.mySelf-description {
-    display: flex;
-    justify-content: center;
-    line-height: 1.8em;
+.mySelf-description, .mySkillsDescription {
+    width: var(--w-description);
+    font-weight: 300;
+    line-height: var(--lh-mySelfDescription);
 }
 
 .mySkills-logo {
@@ -219,7 +253,7 @@ header {
 /* WORK-SECTION */
 
 .work-section {
-    margin: 0rem 4rem 10rem;
+    margin: 0rem 4rem 15rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -227,11 +261,12 @@ header {
 }
 
 .work-section-title {
-    font-size: 3.5em;
+    font-size: var(--fs-subHeading);
     font-weight: 300;
 }
 
 .work-section-title strong {
+    font-size: var(--fs-subHeading_strong);
     font-weight: 700;
     color: #1FFFE4;
 }
@@ -256,7 +291,7 @@ header {
     box-shadow: inset 12px 12px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
     margin-top: 4rem;
-    height: 400px;
+    height: var(--h-cardContainer);
     width: 100%;
     background: #1FFFE4;
 
@@ -268,7 +303,7 @@ header {
 
 .media-track {
     display: flex;
-    width: calc(200px * 30);
+    width: calc(var(--w-card) * 30);
     justify-content: space-around;
 
     animation: scroll 40s linear infinite;
@@ -279,8 +314,8 @@ header {
 }
 
 .media-element {
-    width: 200px;
-    height: 275px;
+    width: var(--w-card) ;
+    height: calc(11/8 * var(--w-card));
     background: #1C1C1C;
     border: 2px solid #FFFFFF;
     box-shadow: 12px 12px 4px rgba(0, 0, 0, 0.25);
@@ -290,14 +325,16 @@ header {
 /* FOOTER-SECTION */
 
 footer {
-    height: auto;
+    height: 150px;
     background: #050505;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
 }
 
 footer p {
+    font-size: var(--fs-myEmail);
     color: #1FFFE4;
     margin: 1.2rem;
 }
@@ -332,4 +369,221 @@ footer p {
 
 .fa-twitter {
     color: #00acee;
+}
+
+@media screen and (max-width: 1200px) {
+
+    :root {
+        --clr-dark: #1c1c1c;
+        --clr-light: #d9d9d9;
+        --clr-white: #FFFFFF;
+    
+        --fs-navbar: 1.8rem;
+        --fs-myName: 8rem;
+        --fs-myProfession: 3rem;
+        --fs-subHeading: 4.5rem;
+        --fs-subHeading_strong: 5rem;
+        --fs-mySelfDescription: 1.8rem;
+        --fs-myEmail: 1.5rem;
+
+        --lh-mySelfDescription: 3.8rem;
+        --w-card: 175px;
+        --h-cardContainer: 320px;
+        --w-myPic-1: 25rem;
+        --w-myPic-2: 23rem;
+    }
+
+
+
+  }
+
+@media screen and (max-width: 1000px) {
+    :root {
+        --lh-mySelfDescription: 3rem;
+        --fs-subHeading: 4rem;
+        --fs-subHeading_strong: 4.5rem;
+
+        --w-description: 45vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    :root {
+        --clr-dark: #1c1c1c;
+        --clr-light: #d9d9d9;
+        --clr-white: #FFFFFF;
+    
+        --fs-navbar: 1.8rem;
+        --fs-myName: 6rem;
+        --fs-myProfession: 2.5rem;
+        --fs-subHeading: 3.5rem;
+        --fs-subHeading_strong: 4rem;
+        --fs-mySelfDescription: 1.6rem;
+        --fs-myEmail: 1.3rem;
+
+        --lh-mySelfDescription: 2.5rem;
+        --w-card: 150px;
+        --h-cardContainer: 280px;
+        --w-description: 40vw;
+
+        --w-myPic-1: 20rem;
+        --w-myPic-2: 20rem;
+    }
+
+    .intro-section {
+        margin: 17rem auto;
+    }
+
+    .fa-html5, .fa-css3-alt, .fa-square-js, .fa-react {
+        font-size: 8rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    :root {
+        --clr-dark: #1c1c1c;
+        --clr-light: #d9d9d9;
+        --clr-white: #FFFFFF;
+    
+        --fs-navbar: 1.8rem;
+        --fs-myName: 5rem;
+        --fs-myProfession: 2.2rem;
+        --fs-subHeading: 4.5rem;
+        --fs-subHeading_strong: 5rem;
+        --fs-mySelfDescription: 1.5rem;
+        --fs-myEmail: 1.5rem;
+
+        --lh-mySelfDescription: 2.8rem;
+        --w-card: 175px;
+        --h-cardContainer: 320px;
+
+        --w-myPic-1: 85vw;
+        --w-myPic-2: 50vw;
+    }
+
+    .intro-section, .about-section, .work-section {
+        margin: 4rem 3.5rem 8rem 3.5rem;
+    }
+
+    .intro-section {
+        display: block;
+        flex-direction: column;
+        justify-content: left;
+    }
+
+    .MyIntro {
+        width: max-content;
+        margin-bottom: 1rem;
+    }
+
+    .myProfession {
+        display: block;
+        width: max-content;
+        left: 0;
+        text-align: center;
+        margin-bottom: 2rem;
+        padding: 1rem;
+        font-weight: 700;
+    }
+
+    .nav {
+        display: none;
+    }
+    .myPic-1 {
+        display: block;
+        position: relative;
+    }
+
+    .about-section {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mySelfDiv {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .myPic-2 {
+        margin-bottom: var(--m-general);
+    }
+
+    .mySkillsDiv {
+        flex-direction: column-reverse;
+    }
+    .mySkills-logo {
+        margin-bottom: var(--m-general);
+    }
+
+    .mySelf > strong, .mySkills > strong {
+        display: inline;
+    }
+
+    .mySelf-description, .mySkillsDescription {
+        text-align: center;
+        width: 100%;
+    }
+
+    .mySelfUnderline, .mySkillsUnderline {
+        display: none;
+        margin-bottom: 0.4rem;
+        width: 10%;
+    }
+
+    .fa-html5, .fa-css3-alt, .fa-square-js, .fa-react {
+        font-size: 8rem;
+    }
+
+    .work-section hr {
+        display: none;
+    }
+
+    .social-links {
+        width: 250px;
+    }
+
+
+    .fa-discord, .fa-github, .fa-instagram, .fa-linkedin, .fa-twitter {
+        font-size: 2.5rem;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+    :root {
+        --fs-myName: 3rem;
+        --fs-myProfession: 1.8rem;
+
+        --fs-subHeading: 4rem;
+        --fs-subHeading_strong: 4.5rem;
+    }
+}
+
+@media screen and (max-width: 270px) {
+    :root {
+        --fs-navbar: 2rem;
+        --fs-myName: 2rem;
+        --fs-myProfession: 1.5rem;
+        --fs-subHeading: 3.5rem;
+        --fs-subHeading_strong: 4rem;
+        --fs-mySelfDescription: 1.3rem;
+        --fs-myEmail: 1.5rem;
+
+        --lh-mySelfDescription: 2.5rem;
+        --w-card: 150px;
+        --h-cardContainer: 290px;
+    }
+
+    .fa-html5, .fa-css3-alt, .fa-square-js, .fa-react {
+        font-size: 6rem;
+    }
+
+    .social-links {
+        width: 200px;
+    }
+
+    .fa-discord, .fa-github, .fa-instagram, .fa-linkedin, .fa-twitter {
+        font-size: 2rem;
+    }
 }
