@@ -117,6 +117,7 @@ header {
 .intro-section {
     display: grid;
     width: min-content;
+    place-items: center;
     margin: 16rem auto;
     grid-template-areas: 
             "img title"
@@ -204,6 +205,7 @@ header {
     font-weight: 700;
     font-size: var(--fs-subHeading_strong);
     color: #1FFFE4;
+    display: block;
 }
 
 .mySkillsDescription {
@@ -457,7 +459,7 @@ footer p {
         --w-card: 175px;
         --h-cardContainer: 320px;
 
-        --w-myPic-1: 85vw;
+        --w-myPic-1: 80vw;
         --w-myPic-2: 50vw;
     }
 
@@ -477,7 +479,7 @@ footer p {
     }
 
     .myProfession {
-        display: block;
+        display: inline-block;
         width: max-content;
         left: 0;
         text-align: center;
@@ -492,6 +494,7 @@ footer p {
     .myPic-1 {
         display: block;
         position: relative;
+        margin: 0;
     }
 
     .about-section {
@@ -573,6 +576,10 @@ footer p {
         --lh-mySelfDescription: 2.5rem;
         --w-card: 150px;
         --h-cardContainer: 290px;
+    }
+
+    .mySkills-logo {
+        grid-column-gap: 70px;
     }
 
     .fa-html5, .fa-css3-alt, .fa-square-js, .fa-react {
