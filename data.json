@@ -3,120 +3,140 @@
         "name": "Meme Generator",
         "key": "1",
         "url": "https://meme-generator-obs.netlify.app",
-        "imgPath": "./img/workImg/Meme-generator.png"
+        "imgPath": "./img/workImg/Meme-generator.png",
+        "description": "This is a web app made with HTML, CSS and JavaScript. It has multiple features and more features will be added to it in future."
     },
     {
         "name": "Passanger Counter",
         "key": "2",
         "url": "https://passanger-counter-obs.netlify.app",
-        "imgPath": "./img/workImg/Passanger-Counter-App.png"
+        "imgPath": "./img/workImg/Passanger-Counter-App.png",
+        "description": "This is a web app made with HTML, CSS and JavaScript. It has multiple features and more features will be added to it in future."
     },
     {
         "name": "Lead Saver",
         "key": "3",
         "url": "https://leadsaver-obs.netlify.app",
-        "imgPath": "./img/workImg/Lead-Saver.png"
+        "imgPath": "./img/workImg/Lead-Saver.png",
+        "description": "This is a web app made with HTML, CSS and JavaScript. It has multiple features and more features will be added to it in future."
     },
     {
         "name": "Ape (Music Web App)",
         "key": "4",
         "url": "https://ape-obs.netlify.app",
-        "imgPath": "./img/workImg/Ape.png"
+        "imgPath": "./img/workImg/Ape.png",
+        "description": "This is a web app made with HTML, CSS and JavaScript. It has multiple features and more features will be added to it in future."
     },
     {
         "name": "Digital Business Card",
         "key": "5",
         "url": "https://digital-business-card-obs.netlify.app",
-        "imgPath": "./img/workImg/Digital-Business-Card.png"
+        "imgPath": "./img/workImg/Digital-Business-Card.png",
+        "description": "This is a web app made with HTML, CSS and JavaScript. It has multiple features and more features will be added to it in future."
     },
     {
         "name": "Travel Journal",
         "key": "6",
         "url": "https://my-travel-journal-obs.netlify.app",
-        "imgPath": "./img/workImg/My-Travel-Journal.png"
+        "imgPath": "./img/workImg/My-Travel-Journal.png",
+        "description": "This is a web app made with HTML, CSS and JavaScript. It has multiple features and more features will be added to it in future."
     },
     {
         "name": "Blog Space",
         "key": "7",
         "url": "https://blogspace-obs.netlify.app",
-        "imgPath": "./img/workImg/Blog-Space.png"
+        "imgPath": "./img/workImg/Blog-Space.png",
+        "description": "This is a web app made with HTML, CSS and JavaScript. It has multiple features and more features will be added to it in future."
     },
     {
         "name": "Color Scheme Generator",
         "key": "8",
         "url": "https://colorschemegenerator-obs.netlify.app",
-        "imgPath": "./img/workImg/Color-Scheme-Generator.png"
+        "imgPath": "./img/workImg/Color-Scheme-Generator.png",
+        "description": "This is a web app made with HTML, CSS and JavaScript. It has multiple features and more features will be added to it in future."
     },
     {
         "name": "Designer",
         "key": "9",
         "url": "https://designer-obs.netlify.app",
-        "imgPath": "./img/workImg/Designer.png"
+        "imgPath": "./img/workImg/Designer.png",
+        "description": "This is a web app made with HTML, CSS and JavaScript. It has multiple features and more features will be added to it in future."
     },
     {
         "name": "My Blog",
         "key": "10",
         "url": "https://my-blog-obs.netlify.app",
-        "imgPath": "./img/workImg/My-Blog.png"
+        "imgPath": "./img/workImg/My-Blog.png",
+        "description": "This is a web app made with HTML, CSS and JavaScript. It has multiple features and more features will be added to it in future."
     },
     {
         "name": "Meme Generator",
         "key": "1",
         "url": "https://meme-generator-obs.netlify.app",
-        "imgPath": "./img/workImg/Meme-generator.png"
+        "imgPath": "./img/workImg/Meme-generator.png",
+        "description": "This is a web app made with HTML, CSS and JavaScript. It has multiple features and more features will be added to it in future."
     },
     {
         "name": "Passanger Counter",
         "key": "2",
         "url": "https://passanger-counter-obs.netlify.app",
-        "imgPath": "./img/workImg/Passanger-Counter-App.png"
+        "imgPath": "./img/workImg/Passanger-Counter-App.png",
+        "description": "This is a web app made with HTML, CSS and JavaScript. It has multiple features and more features will be added to it in future."
     },
     {
         "name": "Lead Saver",
         "key": "3",
         "url": "https://leadsaver-obs.netlify.app",
-        "imgPath": "./img/workImg/Lead-Saver.png"
+        "imgPath": "./img/workImg/Lead-Saver.png",
+        "description": "This is a web app made with HTML, CSS and JavaScript. It has multiple features and more features will be added to it in future."
     },
     {
         "name": "Ape (Music Web App)",
         "key": "4",
         "url": "https://ape-obs.netlify.app",
-        "imgPath": "./img/workImg/Ape.png"
+        "imgPath": "./img/workImg/Ape.png",
+        "description": "This is a web app made with HTML, CSS and JavaScript. It has multiple features and more features will be added to it in future."
     },
     {
         "name": "Digital Business Card",
         "key": "5",
         "url": "https://digital-business-card-obs.netlify.app",
-        "imgPath": "./img/workImg/Digital-Business-Card.png"
+        "imgPath": "./img/workImg/Digital-Business-Card.png",
+        "description": "This is a web app made with HTML, CSS and JavaScript. It has multiple features and more features will be added to it in future."
     },
     {
         "name": "Travel Journal",
         "key": "6",
         "url": "https://my-travel-journal-obs.netlify.app",
-        "imgPath": "./img/workImg/My-Travel-Journal.png"
+        "imgPath": "./img/workImg/My-Travel-Journal.png",
+        "description": "This is a web app made with HTML, CSS and JavaScript. It has multiple features and more features will be added to it in future."
     },
     {
         "name": "Blog Space",
         "key": "7",
         "url": "https://blogspace-obs.netlify.app",
-        "imgPath": "./img/workImg/Blog-Space.png"
+        "imgPath": "./img/workImg/Blog-Space.png",
+        "description": "This is a web app made with HTML, CSS and JavaScript. It has multiple features and more features will be added to it in future."
     },
     {
         "name": "Color Scheme Generator",
         "key": "8",
         "url": "https://colorschemegenerator-obs.netlify.app",
-        "imgPath": "./img/workImg/Color-Scheme-Generator.png"
+        "imgPath": "./img/workImg/Color-Scheme-Generator.png",
+        "description": "This is a web app made with HTML, CSS and JavaScript. It has multiple features and more features will be added to it in future."
     },
     {
         "name": "Designer",
         "key": "9",
         "url": "https://designer-obs.netlify.app",
-        "imgPath": "./img/workImg/Designer.png"
+        "imgPath": "./img/workImg/Designer.png",
+        "description": "This is a web app made with HTML, CSS and JavaScript. It has multiple features and more features will be added to it in future."
     },
     {
         "name": "My Blog",
         "key": "10",
         "url": "https://my-blog-obs.netlify.app",
-        "imgPath": "./img/workImg/My-Blog.png"
+        "imgPath": "./img/workImg/My-Blog.png",
+        "description": "This is a web app made with HTML, CSS and JavaScript. It has multiple features and more features will be added to it in future."
     }
 ]

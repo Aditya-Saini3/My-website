@@ -9,12 +9,13 @@ function renderData() {
     let html = ""
     for (let dat of dataArray) {
         html += `
-        <a href=${dat.url} target="_blank">
         <div class="media-element">
             <h3>${dat.name}</h3>
+            <a href=${dat.url} target="_blank">
             <img src=${dat.imgPath} />
+            </a>
+            <p>${dat.description}</p>
         </div>
-        </a>
         `
     }
     mediaTrack.innerHTML = html
