@@ -322,6 +322,22 @@ header {
     border: 2px solid #FFFFFF;
     box-shadow: 12px 12px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.media-element h3 {
+    font-size: var(--fs-navbar);
+    text-decoration: underline;
+    color: #FFFFFF;
+}
+
+.media-element img {
+    border: 1px solid #FFFFFF;
+    box-shadow: 12px 12px 4px rgba(0, 0, 0, 0.25);
+    width: 90%;
 }
 
 /* FOOTER-SECTION */
