@@ -317,7 +317,7 @@ header {
     animation-play-state: paused;
 }
 
-.media-track:visited {
+.media-element a:visited {
     animation-play-state: running;
 }
 
