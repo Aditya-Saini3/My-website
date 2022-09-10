@@ -19,8 +19,11 @@
     --fs-subHeading: 6rem;
     --fs-subHeading_strong: 6.5rem;
     --fs-mySelfDescription: 2.2rem;
+    --fs-medialElementH3: 2rem; 
+    --fs-mediaElementP: 1.25rem;
     --fs-myEmail: 1.8rem;
 
+    --w-logo: 100px;
     --lh-mySelfDescription: 4rem;
     --h-cardContainer: 400px;
     --w-card: 200px;
@@ -65,7 +68,7 @@ header {
 }
 
 .logo{
-    width: 100px;
+    width: var(--w-logo);
 }
 
 /* navbar  */
@@ -327,10 +330,11 @@ header {
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
+    padding: 1rem;
 }
 
 .media-element h3 {
-    font-size: var(--fs-navbar);
+    font-size: var(--fs-medialElementH3);
     text-decoration: underline;
     color: #FFFFFF;
 }
@@ -343,7 +347,7 @@ header {
 
 .media-element p {
     color: #FFFFFF;
-    font-size: 1.25rem;
+    font-size: var(--fs-mediaElementP);
 }
 
 /* FOOTER-SECTION */
@@ -408,6 +412,8 @@ footer p {
         --fs-subHeading: 4.5rem;
         --fs-subHeading_strong: 5rem;
         --fs-mySelfDescription: 1.8rem;
+        --fs-medialElementH3: 1.8rem;
+        --fs-mediaElementP: 1.1rem;
         --fs-myEmail: 1.5rem;
 
         --lh-mySelfDescription: 3.8rem;
@@ -443,6 +449,8 @@ footer p {
         --fs-subHeading: 3.5rem;
         --fs-subHeading_strong: 4rem;
         --fs-mySelfDescription: 1.6rem;
+        --fs-medialElementH3: 1.6rem;
+        --fs-mediaElementP: 0.9rem;
         --fs-myEmail: 1.3rem;
 
         --lh-mySelfDescription: 2.5rem;
@@ -475,6 +483,8 @@ footer p {
         --fs-subHeading: 4.5rem;
         --fs-subHeading_strong: 5rem;
         --fs-mySelfDescription: 1.5rem;
+        --fs-medialElementH3: 1.8rem;
+        --fs-mediaElementP: 1rem;
         --fs-myEmail: 1.5rem;
 
         --lh-mySelfDescription: 2.8rem;
@@ -593,8 +603,11 @@ footer p {
         --fs-subHeading: 3.5rem;
         --fs-subHeading_strong: 4rem;
         --fs-mySelfDescription: 1.3rem;
+        --fs-medialElementH3: 1.5rem;
+        --fs-mediaElementP: 0.8rem;
         --fs-myEmail: 1.5rem;
 
+        --w-logo: 80px;
         --lh-mySelfDescription: 2.5rem;
         --w-card: 150px;
         --h-cardContainer: 290px;
@@ -614,5 +627,79 @@ footer p {
 
     .fa-discord, .fa-github, .fa-instagram, .fa-linkedin, .fa-twitter {
         font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 240px) {
+    :root {
+        --fs-navbar: 2rem;
+        --fs-myName: 2rem;
+        --fs-myProfession: 1rem;
+        --fs-subHeading: 2.8rem;
+        --fs-subHeading_strong: 3.3rem;
+        --fs-mySelfDescription: 1.3rem;
+        --fs-medialElementH3: 1.3rem;
+        --fs-mediaElementP: 0.7rem;
+        --fs-myEmail: 1.3rem;
+
+        --w-logo: 65px;
+        --lh-mySelfDescription: 2.3rem;
+        --w-card: 125px;
+        --h-cardContainer: 260px;
+    }
+
+    header {
+        padding: 0rem 3.5rem 0rem 3.5rem;
+    }
+
+    .intro-section, .about-section, .work-section {
+        margin: 4rem 3rem 8rem 3rem;
+    }
+
+    .social-links {
+        width: 180px;
+    }
+
+    .fa-discord, .fa-github, .fa-instagram, .fa-linkedin, .fa-twitter {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 210px) {
+    :root {
+        --fs-navbar: 2rem;
+        --fs-myName: 2rem;
+        --fs-myProfession: 1rem;
+        --fs-subHeading: 2.3rem;
+        --fs-subHeading_strong: 2.8rem;
+        --fs-mySelfDescription: 1.2rem;
+        --fs-medialElementH3: 1.3rem;
+        --fs-mediaElementP: 0.7rem;
+        --fs-myEmail: 1.3rem;
+
+        --w-logo: 50px;
+        --lh-mySelfDescription: 2.3rem;
+        --w-card: 125px;
+        --h-cardContainer: 260px;
+    }
+
+    header {
+        padding: 0rem 3rem 0rem 3rem;
+    }
+
+    .intro-section, .about-section, .work-section {
+        margin: 4rem 2.5rem 8rem 2.5rem;
+    }
+
+    .fa-html5, .fa-css3-alt, .fa-square-js, .fa-react {
+        font-size: 5rem;
+    }
+
+    .social-links {
+        width: 150px;
+    }
+
+    .fa-discord, .fa-github, .fa-instagram, .fa-linkedin, .fa-twitter {
+        font-size: 1.8rem;
     }
 }
