@@ -318,6 +318,10 @@ header {
     animation-play-state: paused;
 }
 
+.media-track:visited {
+    animation-play-state: running;
+}
+
 .media-element {
     width: var(--w-card) ;
     height: calc(11/8 * var(--w-card));
