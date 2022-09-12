@@ -45,6 +45,7 @@ body {
     background: var(--clr-dark);
     color: var(--clr-white);
     font-family: 'Source Sans Pro';
+    overflow-x: hidden;
 }
 
 /* HEADER-SECTION */
@@ -176,6 +177,40 @@ header {
     margin: 0 4rem 15rem;
 }
 
+.from-left {
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.from-right {
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+}
+  
+.from-left,
+.from-right {
+    transition: opacity 1s ease-in, transform 1s ease-in,
+      -webkit-transform 0.8s ease-in;
+    opacity: 0;
+  }
+  
+.from-left.appear,
+.from-right.appear {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+.fade-in.appear {
+    opacity: 1;
+}
+
 /* container wrapping pic and mySelf-description and the other skills container*/
 .mySelfDiv, .mySkillsDiv {
     display: flex;
@@ -252,6 +287,31 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.fa-html5, .fa-css3-alt, .fa-square-js, .fa-react {
+    transition: all 600ms ease-in-out;
+    cursor: pointer;
+}
+
+.fa-html5:hover {
+    color: #e34c26;
+} 
+
+.fa-css3-alt:hover {
+    color: #264de4;
+}
+
+.fa-square-js:hover {
+    color: yellow;
+} 
+
+.fa-react:hover {
+    color: #61DBFB;
+} 
+
+.fa-html5:hover, .fa-css3-alt:hover, .fa-square-js:hover, .fa-react:hover {
+    transform: scale(1.2);
 }
 
 /* WORK-SECTION */
@@ -346,6 +406,12 @@ header {
     border: 1px solid #FFFFFF;
     box-shadow: 12px 12px 4px rgba(0, 0, 0, 0.25);
     width: 90%;
+    transition: all 450ms ease-in;
+}
+
+.media-element img:hover {
+    opacity: 0.4;
+    transform: scale(1.15);
 }
 
 .media-element p {
@@ -400,6 +466,12 @@ footer p {
 
 .fa-twitter {
     color: #00acee;
+}
+
+.fa-discord:hover, .fa-github:hover, .fa-instagram:hover, .fa-linkedin:hover, .fa-twitter:hover {
+    background: #00ffe1;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 @media screen and (max-width: 1200px) {
