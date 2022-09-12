@@ -201,10 +201,6 @@ header {
     opacity: 1;
 }
 
-.delay {
-    transition-delay: 2s;
-}
-
 .fade-in {
     opacity: 0;
     transition: opacity 1s ease-in;
@@ -670,6 +666,10 @@ footer p {
 
         --fs-subHeading: 4rem;
         --fs-subHeading_strong: 4.5rem;
+    }
+
+    .delay {
+        transition-delay: 2s;
     }
 }
 
