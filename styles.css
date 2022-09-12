@@ -201,6 +201,9 @@ header {
     opacity: 1;
 }
 
+.delay {
+    transition-delay: 3s;
+}
 
 .fade-in {
     opacity: 0;
