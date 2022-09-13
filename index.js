@@ -36,7 +36,7 @@ fetch("./data.json")
 
 document.documentElement.style.setProperty("--_scroll-padding", headerHeight + 20 + "px");
 
-// function to switch bg og navigation
+// function to switch bg of navigation
 function changeBg() {
     let scrollValue = window.scrollY;
     if(scrollValue > 50) {

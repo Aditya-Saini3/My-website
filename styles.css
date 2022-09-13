@@ -416,6 +416,7 @@ header {
 .media-element p {
     color: #FFFFFF;
     font-size: var(--fs-mediaElementP);
+    letter-spacing: 0.05rem;
 }
 
 /* FOOTER-SECTION */
@@ -467,7 +468,13 @@ footer p {
     color: #00acee;
 }
 
-.fa-discord:hover, .fa-github:hover, .fa-instagram:hover, .fa-linkedin:hover, .fa-twitter:hover {
+.social-links a i {
+    transition: transform 300ms;
+}
+
+.social-links a i:hover {
+    transform: scale(1.3);
+    color: #1FFFE4;
     background: #00ffe1;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -522,7 +529,7 @@ footer p {
         --fs-myProfession: 2.5rem;
         --fs-subHeading: 3.5rem;
         --fs-subHeading_strong: 4rem;
-        --fs-mySelfDescription: 1.6rem;
+        --fs-mySelfDescription: 1.2rem;
         --fs-medialElementH3: 1.6rem;
         --fs-mediaElementP: 0.9rem;
         --fs-myEmail: 1.3rem;
