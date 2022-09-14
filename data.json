@@ -77,9 +77,9 @@
         "description": "This is a web app made with React that generates memes according to the text."
     },
     {
-        "name": "Passanger Counter",
+        "name": "Counter App",
         "key": "2",
-        "url": "https://passanger-counter-obs.netlify.app",
+        "url": "https://counter-obs.netlify.app",
         "imgPath": "./img/workImg/Passanger-Counter-App.png",
         "description": "This is a web app made with HTML, CSS and JavaScript which lets you count anything."
     },
