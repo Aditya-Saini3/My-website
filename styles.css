@@ -213,9 +213,9 @@ header {
 /* container wrapping pic and mySelf-description and the other skills container*/
 .mySelfDiv, .mySkillsDiv {
     display: flex;
-    align-items: inherit;
+    align-items: center;
     justify-content: space-between;
-    padding: var(--p-general) 0rem;
+    padding: var(--p-general) 2rem;
 }
 
 .mySkillsDiv {
