@@ -4,139 +4,125 @@
         "key": "1",
         "url": "https://meme-generator-obs.netlify.app",
         "imgPath": "./img/workImg/Meme-generator.png",
-        "description": "This is a web app made with React that generates memes according to the text."
-    },
-    {
-        "name": "Counter App",
-        "key": "2",
-        "url": "https://counter-obs.netlify.app",
-        "imgPath": "./img/workImg/Passanger-Counter-App.png",
-        "description": "This is a web app made with HTML, CSS and JavaScript which lets you count anything."
-    },
-    {
-        "name": "Lead Saver",
-        "key": "3",
-        "url": "https://leadsaver-obs.netlify.app",
-        "imgPath": "./img/workImg/Lead-Saver.png",
-        "description": "This is a chrome extension made with HTML, CSS and JavaScript which lets you store important links."
+        "description": "Web app made with React that generates memes😝 according to the text."
     },
     {
         "name": "Ape (Music Web App)",
-        "key": "4",
+        "key": "2",
         "url": "https://ape-obs.netlify.app",
         "imgPath": "./img/workImg/Ape.png",
-        "description": "This is a web music app made with HTML, CSS and JavaScript, lets you stream music."
+        "description": "Web music app made with HTML, CSS and JavaScript, lets you stream music🎶."
     },
     {
         "name": "Digital Business Card",
-        "key": "5",
+        "key": "3",
         "url": "https://digital-business-card-obs.netlify.app",
         "imgPath": "./img/workImg/Digital-Business-Card.png",
-        "description": "This is a digitial card made with React which lets you have your online presence."
+        "description": "Digitial card📇 made with React which lets you have your online presence."
     },
     {
         "name": "Travel Journal",
-        "key": "6",
+        "key": "4",
         "url": "https://my-travel-journal-obs.netlify.app",
         "imgPath": "./img/workImg/My-Travel-Journal.png",
-        "description": "This is a journal website made with React which anyone can refer to for travel purposes."
+        "description": "Journal🗞️ website made with React which anyone can refer to for travel purposes."
     },
     {
         "name": "Blog Space",
-        "key": "7",
+        "key": "5",
         "url": "https://blogspace-obs.netlify.app",
         "imgPath": "./img/workImg/Blog-Space.png",
-        "description": "This is a web blogging app made with HTML, CSS and JavaScript, where you can add your blog and give it a title and body."
+        "description": "Web blogging💻 app made with HTML, CSS and JavaScript, where you can add your blog and give it a title and body."
     },
     {
         "name": "Color Scheme Generator",
-        "key": "8",
+        "key": "6",
         "url": "https://colorschemegenerator-obs.netlify.app",
         "imgPath": "./img/workImg/Color-Scheme-Generator.png",
-        "description": "This is a web app made with HTML, CSS and JavaScript which lets you generate color schemes."
+        "description": "Web app made with HTML, CSS and JavaScript which lets you generate color schemes🎨."
     },
     {
         "name": "Designer",
-        "key": "9",
+        "key": "7",
         "url": "https://designer-obs.netlify.app",
         "imgPath": "./img/workImg/Designer.png",
-        "description": "This is a website made with HTML, CSS and JavaScript for an organization."
+        "description": "This is a website made with HTML, CSS and JavaScript for an organization✏️."
     },
     {
         "name": "My Blog",
-        "key": "10",
+        "key": "8",
         "url": "https://my-blog-obs.netlify.app",
         "imgPath": "./img/workImg/My-Blog.png",
-        "description": "This is a blogging website made with HTML, CSS and JavaScript for bloggers."
+        "description": "Blogging website🖥️ made with HTML, CSS and JavaScript for bloggers."
+    },
+    {
+        "name": "Movie Watchlist",
+        "key": "9",
+        "url": "https://movie-watchlist-obs.netlify.app/",
+        "imgPath": "./img/workImg/Movie-watchlist.png",
+        "description": "Web App made with React where you can search and watchlist your favourite movies🎬."
     },
     {
         "name": "Meme Generator",
         "key": "1",
         "url": "https://meme-generator-obs.netlify.app",
         "imgPath": "./img/workImg/Meme-generator.png",
-        "description": "This is a web app made with React that generates memes according to the text."
-    },
-    {
-        "name": "Counter App",
-        "key": "2",
-        "url": "https://counter-obs.netlify.app",
-        "imgPath": "./img/workImg/Passanger-Counter-App.png",
-        "description": "This is a web app made with HTML, CSS and JavaScript which lets you count anything."
-    },
-    {
-        "name": "Lead Saver",
-        "key": "3",
-        "url": "https://leadsaver-obs.netlify.app",
-        "imgPath": "./img/workImg/Lead-Saver.png",
-        "description": "This is a chrome extension made with HTML, CSS and JavaScript which lets you store important links."
+        "description": "Web app made with React that generates memes😝 according to the text."
     },
     {
         "name": "Ape (Music Web App)",
-        "key": "4",
+        "key": "2",
         "url": "https://ape-obs.netlify.app",
         "imgPath": "./img/workImg/Ape.png",
-        "description": "This is a web music app made with HTML, CSS and JavaScript, lets you stream music."
+        "description": "Web music app made with HTML, CSS and JavaScript, lets you stream music🎶."
     },
     {
         "name": "Digital Business Card",
-        "key": "5",
+        "key": "3",
         "url": "https://digital-business-card-obs.netlify.app",
         "imgPath": "./img/workImg/Digital-Business-Card.png",
-        "description": "This is a digitial card made with React which lets you have your online presence."
+        "description": "Digitial card📇 made with React which lets you have your online presence."
     },
     {
         "name": "Travel Journal",
-        "key": "6",
+        "key": "4",
         "url": "https://my-travel-journal-obs.netlify.app",
         "imgPath": "./img/workImg/My-Travel-Journal.png",
-        "description": "This is a journal website made with React which anyone can refer to for travel purposes."
+        "description": "Journal🗞️ website made with React which anyone can refer to for travel purposes."
     },
     {
         "name": "Blog Space",
-        "key": "7",
+        "key": "5",
         "url": "https://blogspace-obs.netlify.app",
         "imgPath": "./img/workImg/Blog-Space.png",
-        "description": "This is a web blogging app made with HTML, CSS and JavaScript, where you can add your blog and give it a title and body."
+        "description": "Web blogging💻 app made with HTML, CSS and JavaScript, where you can add your blog and give it a title and body."
     },
     {
         "name": "Color Scheme Generator",
-        "key": "8",
+        "key": "6",
         "url": "https://colorschemegenerator-obs.netlify.app",
         "imgPath": "./img/workImg/Color-Scheme-Generator.png",
-        "description": "This is a web app made with HTML, CSS and JavaScript which lets you generate color schemes."
+        "description": "Web app made with HTML, CSS and JavaScript which lets you generate color schemes🎨."
     },
     {
         "name": "Designer",
-        "key": "9",
+        "key": "7",
         "url": "https://designer-obs.netlify.app",
         "imgPath": "./img/workImg/Designer.png",
-        "description": "This is a website made with HTML, CSS and JavaScript for an organization."
+        "description": "This is a website made with HTML, CSS and JavaScript for an organization✏️."
     },
     {
         "name": "My Blog",
-        "key": "10",
+        "key": "8",
         "url": "https://my-blog-obs.netlify.app",
         "imgPath": "./img/workImg/My-Blog.png",
-        "description": "This is a blogging website made with HTML, CSS and JavaScript for bloggers."
+        "description": "Blogging website🖥️ made with HTML, CSS and JavaScript for bloggers."
+    },
+    {
+        "name": "Movie Watchlist",
+        "key": "9",
+        "url": "https://movie-watchlist-obs.netlify.app/",
+        "imgPath": "./img/workImg/Movie-watchlist.png",
+        "description": "Web App made with React where you can search and watchlist your favourite movies🎬."
     }
 ]
