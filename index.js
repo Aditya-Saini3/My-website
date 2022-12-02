@@ -1,6 +1,6 @@
 const header = document.querySelector('header');
 const headerHeight = header.offsetHeight;
-const mediaTrack = document.querySelector('.media-track');
+const projectsContainer = document.querySelector('.projects-container');
 const faders = document.querySelectorAll('.fade-in');
 const sliders = document.querySelectorAll(".slide-in");
 
@@ -11,16 +11,28 @@ function renderData() {
     let html = ""
     for (let dat of dataArray) {
         html += `
-        <div class="media-element">
-            <h3>${dat.name}</h3>
+        <div class="project">
             <a href=${dat.url} target="_blank">
-            <img src=${dat.imgPath} />
+                <img src=${dat.imgPath} class="project__img"/>
             </a>
-            <p>${dat.description}</p>
+            <div class="tags-container">
+                <h3 class="tag">${dat.type}</h3>
+            </div>
+            <div class="project__content">
+                <a href=${dat.url} target="_blank">
+                    <h2 class="project__content-title">${dat.name}</h2>
+                </a>
+                <p class="project__content-description">${dat.description}</p>
+            </div>
+            <div class="buttons-container">
+                <a href=${dat.repoUrl} target="_blank">
+                    <button class="repo-btn"> ${dat.type === "Website" ? "Repo Link" : "Figma Link"}</button>
+                </a>
+            </div>
         </div>
         `
     }
-    mediaTrack.innerHTML = html
+    projectsContainer.innerHTML = html
 }
 
 //Fetching Data from data.json file
