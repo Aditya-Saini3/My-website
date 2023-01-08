@@ -1,8 +1,19 @@
 [
     {
+        "name": "Quizzical",
+        "key": "1",
+        "type": "Website",
+        "codLang": "JavaScript",
+        "url": "https://quizzical-obs.netlify.app/",
+        "imgPath": "./img/workImg/Quizzical.png",
+        "description": "Trivia Web App made with React that challenges you to answers related to certain topics📝.",
+        "repoUrl": "https://github.com/Aditya-Saini3/Movie-Watchlist" 
+    },
+    {
         "name": "Movie Watchlist",
         "key": "1",
         "type": "Website",
+        "codLang": "React",
         "url": "https://movie-watchlist-obs.netlify.app/",
         "imgPath": "./img/workImg/Movie-watchlist.png",
         "description": "Web App made with React where you can search and watchlist your favourite movies🎬.",
@@ -12,9 +23,10 @@
         "name": "EMI Calculator",
         "key": "2",
         "type": "Website",
+        "codLang": "React",
         "url": "https://emi-calculator-obs.netlify.app/",
         "imgPath": "./img/workImg/EMI-Calculator.png",
-        "description": "Web App made with React to calculate your EMI's and bunch of other things like total Money payable after loan tenure.",
+        "description": "Web App made with React to calculate🧮 your EMI's and bunch of other things like total Money payable after loan tenure.",
         "repoUrl": "https://github.com/Aditya-Saini3/Emi-calculator"
         
     },
@@ -22,6 +34,7 @@
         "name": "Color Scheme Generator",
         "key": "3",
         "type": "Website",
+        "codLang": "JavaScript",
         "url": "https://colorschemegenerator-obs.netlify.app",
         "imgPath": "./img/workImg/Color-Scheme-Generator.png",
         "description": "Web app made with HTML, CSS and JavaScript which lets you generate color schemes🎨.",
@@ -31,6 +44,7 @@
         "name": "Random Quote Generator",
         "key": "4",
         "type": "Website",
+        "codLang": "React",
         "url": "https://random-quote-generator-obs.netlify.app/",
         "imgPath": "./img/workImg/Random-Quote-Generator.png",
         "description": "Web App made with React that generates random quotes💬.",
@@ -40,6 +54,7 @@
         "name": "Meme Generator",
         "key": "5",
         "type": "Website",
+        "codLang": "React",
         "url": "https://meme-generator-obs.netlify.app",
         "imgPath": "./img/workImg/Meme-generator.png",
         "description": "Web app made with React that generates memes😝 according to the text.",
