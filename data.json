@@ -11,7 +11,7 @@
     },
     {
         "name": "Movie Watchlist",
-        "key": "1",
+        "key": "2",
         "type": "Website",
         "codLang": "React",
         "url": "https://movie-watchlist-obs.netlify.app/",
@@ -21,7 +21,7 @@
     },
     {
         "name": "EMI Calculator",
-        "key": "2",
+        "key": "3",
         "type": "Website",
         "codLang": "React",
         "url": "https://emi-calculator-obs.netlify.app/",
@@ -31,8 +31,19 @@
         
     },
     {
+        "name": "Markdown Previewer",
+        "key": "4",
+        "type": "Website",
+        "codLang": "React",
+        "url": "https://markdown-previewer-obs.netlify.app/",
+        "imgPath": "./img/workImg/Markdown-Previewer.png",
+        "description": "Web App made with React using marked.js library to preview🧐 your markdown",
+        "repoUrl": "https://github.com/Aditya-Saini3/Markdown-previewer"
+        
+    },
+    {
         "name": "Color Scheme Generator",
-        "key": "3",
+        "key": "5",
         "type": "Website",
         "codLang": "JavaScript",
         "url": "https://colorschemegenerator-obs.netlify.app",
@@ -42,7 +53,7 @@
     },
     {
         "name": "Random Quote Generator",
-        "key": "4",
+        "key": "6",
         "type": "Website",
         "codLang": "React",
         "url": "https://random-quote-generator-obs.netlify.app/",
@@ -52,7 +63,7 @@
     },
     {
         "name": "Meme Generator",
-        "key": "5",
+        "key": "7",
         "type": "Website",
         "codLang": "React",
         "url": "https://meme-generator-obs.netlify.app",
@@ -62,7 +73,7 @@
     },
     {
         "name": "OBS Music Player",
-        "key": "6",
+        "key": "8",
         "type": "Web Design",
         "url": "https://www.figma.com/file/c2a7jy03UOrx03GTtYWy75/OBS-Music-Player?node-id=0%3A1&t=QzQa7vgE9NDJsIjx-1",
         "imgPath": "./img/workImg/OBS-Music-Player.png",
