@@ -62,18 +62,8 @@
         "repoUrl": "https://github.com/Aditya-Saini3/Random-Quote-Generator"
     },
     {
-        "name": "Meme Generator",
-        "key": "7",
-        "type": "Website",
-        "codLang": "React",
-        "url": "https://meme-generator-obs.netlify.app",
-        "imgPath": "./img/workImg/Meme-generator.png",
-        "description": "Web app made with React that generates memes😝 according to the text.",
-        "repoUrl": "https://github.com/Aditya-Saini3/MemeGenerator"
-    },
-    {
         "name": "OBS Music Player",
-        "key": "8",
+        "key": "7",
         "type": "Web Design",
         "url": "https://www.figma.com/file/c2a7jy03UOrx03GTtYWy75/OBS-Music-Player?node-id=0%3A1&t=QzQa7vgE9NDJsIjx-1",
         "imgPath": "./img/workImg/OBS-Music-Player.png",
