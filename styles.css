@@ -7,7 +7,7 @@
     margin: 0;
     padding: 0;
 }
-
+ /* GENERAL-STYLING  */
 :root {
     --clr-dark: #1c1c1c;
     --clr-light: #d9d9d9;
@@ -33,6 +33,35 @@
 
     --m-general: 4rem;
     --p-general: 4rem;
+}
+
+.small-underline {
+    margin: 0.5rem 0;
+    width: 13%;
+    border: 2px solid #1FFFE4;
+    border-radius: 2px;
+}
+
+.contact-section, .about-section, .work-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section, .work-section {
+    justify-content: center;
+    align-items: center;
+}
+
+.subheading {
+    line-height: 100%;
+    font-size: var(--fs-subHeading);
+    font-weight: 300;
+}
+
+.subheading-strong {
+    font-size: var(--fs-subHeading_strong);
+    font-weight: 700;
+    color: #1FFFE4;
 }
 
 html {
@@ -64,7 +93,7 @@ header {
     position: sticky;
     top: 0;
     background: #050505;
-    z-index: 3;
+    z-index: 1000;
     box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -114,6 +143,21 @@ header {
 .nav-items-list > li > a:hover::after {
     transform: scaleX(1);
     transform-origin: left;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
 }
 
 /* INTRO-SECTION */
@@ -172,9 +216,7 @@ header {
 
 .about-section {
     font-size: var(--fs-mySelfDescription);
-    display: flex;
-    flex-direction: column;
-    margin: 0 4rem 15rem;
+    margin: 0 4rem 6rem;
 }
 
 .from-left {
@@ -211,15 +253,11 @@ header {
 }
 
 /* container wrapping pic and mySelf-description and the other skills container*/
-.mySelfDiv, .mySkillsDiv {
+.mySelfDiv {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: var(--p-general) 2rem;
-}
-
-.mySkillsDiv {
-    flex-direction: row-reverse;
 }
 
 .myPic-2 {
@@ -230,29 +268,16 @@ header {
 
 /* Who I am? heading */
 .mySelf {
-    font-weight: 300;
-    font-size: var(--fs-subHeading);
-    line-height: 100%;
     grid-area: "mySelf";
 }
 
 /* I am? and Skills heading */
 .mySelf > strong, .mySkills > strong {
-    font-weight: 700;
-    font-size: var(--fs-subHeading_strong);
-    color: #1FFFE4;
     display: block;
-}
-
-.mySkillsDescription {
-    text-align: right;
 }
 
 /* My Skills heading */
 .mySkills {
-    font-weight: 300;
-    font-size: var(--fs-subHeading);
-    line-height: 100%;
     text-align: right;
     grid-area: "mySkills";
 }
@@ -267,19 +292,27 @@ header {
     grid-area: "mySelfUnderline";
 }
 
-.mySelf-description, .mySkillsDescription {
+.mySelf-description {
     width: var(--w-description);
     font-weight: 300;
     line-height: var(--lh-mySelfDescription);
 }
 
-.mySkills-logo {
+.mySkillsDiv {
     display: grid;
-    grid-template-columns: fit-content(200px) fit-content(200px);
-    grid-template-rows: auto auto;
-    justify-content: right;
-    grid-column-gap: 100px;
-    grid-row-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 10px;
+    padding: 5rem 0 2rem 0;
+    width: 100%;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 1rem;
 }
 
 .mySkills-logo i {
@@ -289,49 +322,13 @@ header {
 }
 
 .fa-html5, .fa-css3-alt, .fa-square-js, .fa-react {
-    transition: all 600ms ease-in-out;
     cursor: pointer;
-}
-
-.fa-html5:hover {
-    color: #e34c26;
 } 
-
-.fa-css3-alt:hover {
-    color: #264de4;
-}
-
-.fa-square-js:hover {
-    color: yellow;
-} 
-
-.fa-react:hover {
-    color: #61DBFB;
-} 
-
-.fa-html5:hover, .fa-css3-alt:hover, .fa-square-js:hover, .fa-react:hover {
-    transform: scale(1.2);
-}
 
 /* WORK-SECTION */
 
 .work-section {
     margin: 0rem 4rem 15rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.work-section-title {
-    font-size: var(--fs-subHeading);
-    font-weight: 300;
-}
-
-.work-section-title strong {
-    font-size: var(--fs-subHeading_strong);
-    font-weight: 700;
-    color: #1FFFE4;
 }
 
 .work-section hr {
@@ -411,6 +408,72 @@ header {
 }
 
 .repo-btn:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid #1FFFE4;
+}
+
+/* CONTACT-SECTION  */
+
+.contact-section {
+    margin: 0em 3em 3em 3em;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    background-color: #050505;
+    padding: 3em;
+    border-radius: 10px;
+}
+
+.form input, .form textarea {
+    border-radius: 5px;
+    border: none;
+    outline: none;
+
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 2rem;
+    letter-spacing: normal;
+
+    padding-left: 10px;
+}
+
+.form input {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin-bottom: 8px;
+}
+
+.form textarea {
+    padding-top: 10px;
+    resize: none;
+    margin-bottom: 10px;
+}
+
+.name-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+.submit-btn {
+    padding: 0.5em 2em;
+    border-radius: 5px;
+    align-self: center;
+
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+
+    background-color: #00ffe1;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
     background-color: black;
     color: white;
     border: 2px solid #1FFFE4;
@@ -545,6 +608,23 @@ footer {
         margin: 17rem auto;
     }
 
+    .name-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-section {
+        margin: 0;
+    }
+
+    .form {
+        border-radius: 0;
+        padding: 2em;
+    }
+
+    .submit-btn {
+        width: 100%;
+    }
+
     .fa-html5, .fa-css3-alt, .fa-square-js, .fa-react {
         font-size: 8rem;
     }
@@ -599,9 +679,53 @@ footer {
         font-weight: 700;
     }
 
-    .nav {
-        display: none;
+    header {
+        background-color: #050505;
+        position: sticky;
+        z-index: 1000;
+        box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
     }
+
+    .nav > ul {
+        position: fixed;
+        right: 0;
+        top: -100%;
+        gap: 0;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        background-color: #050505;
+        z-index: -1;
+        box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .nav > ul > li {
+        margin: 16px 0;
+    }
+
+    header.active {
+        box-shadow: unset;
+    }
+
+    .nav > ul.active {
+        top: 50px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
     .myPic-1 {
         display: block;
         position: relative;
@@ -612,20 +736,19 @@ footer {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin: 0 2rem 4rem;
     }
 
     .mySelfDiv {
         flex-direction: column-reverse;
         width: 100%;
+        padding: var(--p-general) 0;
     }
 
     .myPic-2 {
         margin-bottom: var(--m-general);
     }
 
-    .mySkillsDiv {
-        flex-direction: column-reverse;
-    }
     .mySkills-logo {
         margin-bottom: var(--m-general);
     }
@@ -634,7 +757,7 @@ footer {
         display: inline;
     }
 
-    .mySelf-description, .mySkillsDescription {
+    .mySelf-description {
         text-align: center;
         width: 100%;
     }
@@ -666,11 +789,19 @@ footer {
 
 @media screen and (max-width: 350px) {
     :root {
-        --fs-myName: 3rem;
+        --fs-myName: 4rem;
         --fs-myProfession: 1.8rem;
 
         --fs-subHeading: 4rem;
         --fs-subHeading_strong: 4.5rem;
+    }
+
+    .form input {
+        font-size: 1.8rem;
+    }
+
+    .form textarea {
+        font-size: 1.8rem;
     }
 
     .delay {
@@ -681,7 +812,7 @@ footer {
 @media screen and (max-width: 270px) {
     :root {
         --fs-navbar: 2rem;
-        --fs-myName: 2rem;
+        --fs-myName: 3.5rem;
         --fs-myProfession: 1.5rem;
         --fs-subHeading: 3.5rem;
         --fs-subHeading_strong: 4rem;

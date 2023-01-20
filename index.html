@@ -23,11 +23,16 @@
       <img src="./img/logo.svg" alt="AdiOBS logo" class="logo" />
       <nav class="nav">
         <ul class="nav-items-list">
-          <li><a href="#top">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#work">Work</a></li>
-          <li><a href="#footer">Contact</a></li>
+          <li><a href="#top" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#work" class="nav-link">Work</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </nav>
     </header>
 
@@ -41,10 +46,10 @@
 
     <!-- About-section -->
     <section class="about-section" id="about">
-      <h1 class="mySelf slide-in fade-in delay">Who <strong>I am?</strong></h1>
+      <h1 class="mySelf slide-in fade-in delay subheading">Who <strong class="subheading-strong">I am?</strong></h1>
       <hr class="mySelfUnderline slide-in fade-in delay" />
       <div class="mySelfDiv">
-        <div class="mySelf-description slide-in from-left delay">
+        <div class="mySelf-description slide-in fade-in delay">
           Hi, I am a front-end web developer from Himachal Pradesh, India. I am
           open to an on-site job, remote job and freelance work. I am a high
           school graduate in the science stream. I got into coding after 12th
@@ -55,47 +60,73 @@
           doing much), working out, and reading books.
         </div>
         <img
-          src="./img/IMG_4893-02.jpeg"
+          src="./img/Aditya-fullpic-standing.jpeg"
           alt="Aditya-pic-Standing"
-          class="myPic-2 slide-in from-right delay"
+          class="myPic-2 slide-in fade-in delay"
         />
       </div>
-      <h1 class="mySkills slide-in fade-in">My <strong>Skills</strong></h1>
+      <h1 class="mySkills slide-in fade-in subheading">My <strong class="subheading-strong">Skills</strong></h1>
       <hr class="mySkillsUnderline slide-in fade-in" />
       <div class="mySkillsDiv">
-        <div class="mySkillsDescription slide-in from-right">
-          HTML, CSS, JavaScript and React are the technologies that I currently
-          use to make websites. I have learned these skills from FreeCodeCamp
-          and Scrimba. You can check my front-end projects down below and you
-          can also refer to my GitHub Repositories to see the source code. I am
-          learning to become a Full Stack Web Developer and currently learning
-          technologies like relational databases and side by side making new
-          projects for my portfolio.
+        <div class="skill fade-in slide-in">
+          <i class="fa-brands fa-html5 fa-5x"></i>
+          <h3>HTML</h3>
         </div>
-        <div class="mySkills-logo slide-in from-left">
-          <i class="fa-brands fa-html5 fa-6x"></i>
-          <i class="fa-brands fa-css3-alt fa-6x"></i>
-          <i class="fa-brands fa-square-js fa-6x"></i>
-          <i class="fa-brands fa-react fa-6x"></i>
+        <div class="skill fade-in slide-in">
+          <i class="fa-brands fa-css3-alt fa-5x"></i>
+          <h3>CSS</h3>
+        </div>
+        <div class="skill fade-in slide-in">
+          <i class="fa-brands fa-square-js fa-5x"></i>
+          <h3>JavaScript</h3>
+        </div>
+        <div class="skill fade-in slide-in">
+          <i class="fa-brands fa-react fa-5x"></i>
+          <h3>React</h3>
+        </div>
+        <div class="skill fade-in slide-in">
+          <i class="fa-solid fa-gears fa-4x"></i>
+          <h3>APIs</h3>
+        </div>
+        <div class="skill fade-in slide-in">
+          <i class="fa-brands fa-figma fa-4x"></i>
+          <h3>Figma</h3>
+        </div>
+        <div class="skill fade-in slide-in">
+          <i class="fa-brands fa-wordpress-simple fa-4x"></i>
+          <h3>WordPress</h3>
         </div>
       </div>
     </section>
 
     <!-- Work Section -->
     <section class="work-section" id="work">
-      <h1 class="work-section-title">My <strong>Work</strong></h1>
-      <hr class="work-section-title-underline" />
+      <h1 class="work-section-title subheading">My <strong class="subheading-strong">Work</strong></h1>
+      <hr class="small-underline" />
 
       <div class="projects-container"></div>
     </section>
 
+    <!-- Contact Section  -->
+    <section class="contact-section" id="contact">
+      <h1 class="contact-section-title subheading">Contact <strong class="subheading-strong">Me</strong></h1>
+      <hr class="small-underline">
+      <form action="https://formsubmit.co/adityasaini2024@gmail.com" class="form" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <div class="name-wrapper">
+          <input type="text" name="firstName" placeholder="First Name" required>
+          <input type="text" name="lastName" placeholder="Last Name">
+        </div>
+        <input type="email" name="email" placeholder="Enter your email here" required>
+        <textarea name="message" id="" cols="30" rows="10" placeholder="Enter your message here" required></textarea>
+        <button type="submit" class="submit-btn">Send</button>
+      </form>
+    </section>
+
     <footer id="footer">
-      <a href="mailto:adityasaini2024@gmail.com" class="email"
-        >adityasaini2024@gmail.com</a
-      >
       <div class="social-links">
-        <a href="https://www.instagram.com/sainiadi_3/" target="”_blank”"
-          ><i class="fa-brands fa-instagram fa-3x"></i
+        <a href="https://dev.to/adityasaini3" target="”_blank”"
+          ><i class="fa-brands fa-dev fa-3x"></i
         ></a>
         <a href="https://github.com/Aditya-Saini3" target="”_blank”"
           ><i class="fa-brands fa-github fa-3x"></i
@@ -111,7 +142,7 @@
       </div>
     </footer>
 
-    <script src="index.js"></script>
-    <script src="data.json"></script>
+    <script src="index.js" type="module"></script>
+    <script src="projectsData.json"></script>
   </body>
 </html>
