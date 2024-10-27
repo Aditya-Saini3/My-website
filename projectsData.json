@@ -1,7 +1,27 @@
 [
     {
-        "name": "Quizzical",
+        "name": "Differently with Sole",
         "key": "1",
+        "type": "Website",
+        "codLang": "WordPress",
+        "url": "https://differentlywithsole.com/",
+        "imgPath": "./img/workImg/DifferentlywithSole.png",
+        "description": "DWS is a website made for an experienced Speech language Pathologist.",
+        "repoUrl": "https://differentlywithsole.com/" 
+    },
+    {
+        "name": "SBC-Academy",
+        "key": "2",
+        "type": "Website",
+        "codLang": "Kajabi",
+        "url": "https://www.sbc-academy.org/",
+        "imgPath": "./img/workImg/SBC-Academy.png",
+        "description": "Learning Platform for non-profit organizations.",
+        "repoUrl": "https://www.sbc-academy.org/" 
+    },
+    {
+        "name": "Quizzical",
+        "key": "3",
         "type": "Website",
         "codLang": "JavaScript",
         "url": "https://quizzical-obs.netlify.app/",
@@ -11,7 +31,7 @@
     },
     {
         "name": "Movie Watchlist",
-        "key": "2",
+        "key": "4",
         "type": "Website",
         "codLang": "React",
         "url": "https://movie-watchlist-obs.netlify.app/",
@@ -21,7 +41,7 @@
     },
     {
         "name": "EMI Calculator",
-        "key": "3",
+        "key": "5",
         "type": "Website",
         "codLang": "React",
         "url": "https://emi-calculator-obs.netlify.app/",
@@ -31,39 +51,8 @@
         
     },
     {
-        "name": "Markdown Previewer",
-        "key": "4",
-        "type": "Website",
-        "codLang": "React",
-        "url": "https://markdown-previewer-obs.netlify.app/",
-        "imgPath": "./img/workImg/Markdown-Previewer.png",
-        "description": "Web App made with React using marked.js library to preview🧐 your markdown",
-        "repoUrl": "https://github.com/Aditya-Saini3/Markdown-previewer"
-        
-    },
-    {
-        "name": "Color Scheme Generator",
-        "key": "5",
-        "type": "Website",
-        "codLang": "JavaScript",
-        "url": "https://colorschemegenerator-obs.netlify.app",
-        "imgPath": "./img/workImg/Color-Scheme-Generator.png",
-        "description": "Web app made with HTML, CSS and JavaScript which lets you generate color schemes🎨.",
-        "repoUrl": "https://github.com/Aditya-Saini3/ColorSchemeGenerator"
-    },
-    {
-        "name": "Random Quote Generator",
-        "key": "6",
-        "type": "Website",
-        "codLang": "React",
-        "url": "https://random-quote-generator-obs.netlify.app/",
-        "imgPath": "./img/workImg/Random-Quote-Generator.png",
-        "description": "Web App made with React that generates random quotes💬.",
-        "repoUrl": "https://github.com/Aditya-Saini3/Random-Quote-Generator"
-    },
-    {
         "name": "OBS Music Player",
-        "key": "7",
+        "key": "6",
         "type": "Web Design",
         "url": "https://www.figma.com/file/c2a7jy03UOrx03GTtYWy75/OBS-Music-Player?node-id=0%3A1&t=QzQa7vgE9NDJsIjx-1",
         "imgPath": "./img/workImg/OBS-Music-Player.png",

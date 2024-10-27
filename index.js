@@ -28,9 +28,7 @@ function renderData() {
             </div>
             <div class="buttons-container">
                 <a href=${dat.repoUrl} target="_blank">
-                    <button class="repo-btn"> ${
-                      dat.type === "Website" ? "Repo Link" : "Figma Link"
-                    }</button>
+                    <button class="repo-btn">Check it now</button>
                 </a>
             </div>
         </div>
